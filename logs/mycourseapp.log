@@ -1,0 +1,114 @@
+2016-10-05 16:36:06.365  INFO 14200 --- [main] s.m.c.config.MyCourseAppApplication      : Starting MyCourseAppApplication on LAPTOP-Q57K36SK with PID 14200 (C:\Users\sruth\Documents\workspace-sts-3.7.3.RELEASE\MyCourseApp\target\classes started by sruth in C:\Users\sruth\Documents\workspace-sts-3.7.3.RELEASE\MyCourseApp)
+2016-10-05 16:36:06.384  INFO 14200 --- [main] s.m.c.config.MyCourseAppApplication      : No active profile set, falling back to default profiles: default
+2016-10-05 16:36:06.481  INFO 14200 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6200f9cb: startup date [Wed Oct 05 16:36:06 CDT 2016]; root of context hierarchy
+2016-10-05 16:36:09.709  INFO 14200 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b2232e78] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-05 16:36:10.534  INFO 14200 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-10-05 16:36:10.563  INFO 14200 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-10-05 16:36:10.565  INFO 14200 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-10-05 16:36:10.864  INFO 14200 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-10-05 16:36:10.865  INFO 14200 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4384 ms
+2016-10-05 16:36:11.493  INFO 14200 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-10-05 16:36:11.533  INFO 14200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-10-05 16:36:11.534  INFO 14200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-10-05 16:36:11.535  INFO 14200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-10-05 16:36:11.536  INFO 14200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-10-05 16:36:12.113  INFO 14200 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-10-05 16:36:12.144  INFO 14200 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-10-05 16:36:12.281  INFO 14200 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.9.Final}
+2016-10-05 16:36:12.288  INFO 14200 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-10-05 16:36:12.293  INFO 14200 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-10-05 16:36:12.397  INFO 14200 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-10-05 16:36:14.018  INFO 14200 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-10-05 16:36:14.776  INFO 14200 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2016-10-05 16:36:16.521  INFO 14200 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2016-10-05 16:36:17.009  INFO 14200 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2016-10-05 16:36:17.663  INFO 14200 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6200f9cb: startup date [Wed Oct 05 16:36:06 CDT 2016]; root of context hierarchy
+2016-10-05 16:36:17.857  INFO 14200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<src.main.courseapp.domain.Course> src.main.courseapp.Controllers.CourseController.update(src.main.courseapp.domain.Course) throws java.lang.Exception
+2016-10-05 16:36:17.859  INFO 14200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{cId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<src.main.courseapp.domain.Course> src.main.courseapp.Controllers.CourseController.update(java.lang.Integer) throws java.lang.Exception
+2016-10-05 16:36:17.860  INFO 14200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{cId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> src.main.courseapp.Controllers.CourseController.delete(int) throws java.lang.Exception
+2016-10-05 16:36:17.861  INFO 14200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course],methods=[POST]}" onto public org.springframework.http.ResponseEntity<src.main.courseapp.domain.Course> src.main.courseapp.Controllers.CourseController.create(src.main.courseapp.domain.Course) throws java.lang.Exception
+2016-10-05 16:36:17.861  INFO 14200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{cId}/user/{uId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<src.main.courseapp.domain.Course> src.main.courseapp.Controllers.CourseController.removeUserFromCourse(int,int) throws java.lang.Exception
+2016-10-05 16:36:17.862  INFO 14200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{cId}/topic],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> src.main.courseapp.Controllers.CourseController.removeTopicFromCourse(int,src.main.courseapp.domain.Topic) throws java.lang.Exception
+2016-10-05 16:36:17.862  INFO 14200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{cId}/topic],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<src.main.courseapp.domain.Course> src.main.courseapp.Controllers.CourseController.addTopicToCourse(int,src.main.courseapp.domain.Topic) throws java.lang.Exception
+2016-10-05 16:36:17.863  INFO 14200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{cId}/user/{uId}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<src.main.courseapp.domain.Course> src.main.courseapp.Controllers.CourseController.addUserToCourse(int,int) throws java.lang.Exception
+2016-10-05 16:36:17.864  INFO 14200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/authenticate],methods=[POST]}" onto public org.springframework.http.ResponseEntity<src.main.courseapp.domain.User> src.main.courseapp.Controllers.LoginController.login(src.main.courseapp.domain.User) throws java.lang.Exception
+2016-10-05 16:36:17.867  INFO 14200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<src.main.courseapp.domain.User> src.main.courseapp.Controllers.UserController.update(src.main.courseapp.domain.User) throws java.lang.Exception
+2016-10-05 16:36:17.871  INFO 14200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{uId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> src.main.courseapp.Controllers.UserController.delete(int) throws java.lang.Exception
+2016-10-05 16:36:17.872  INFO 14200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<src.main.courseapp.domain.User> src.main.courseapp.Controllers.UserController.create(src.main.courseapp.domain.User) throws java.lang.Exception
+2016-10-05 16:36:17.873  INFO 14200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/course/{uId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<src.main.courseapp.domain.Course>> src.main.courseapp.Controllers.UserController.getAllCoursesForaUser(int) throws java.lang.Exception
+2016-10-05 16:36:17.874  INFO 14200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{uId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<src.main.courseapp.domain.User> src.main.courseapp.Controllers.UserController.getByUserId(java.lang.Integer) throws java.lang.Exception
+2016-10-05 16:36:17.875  INFO 14200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{userName}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<src.main.courseapp.domain.User> src.main.courseapp.Controllers.UserController.getByUserName(java.lang.String) throws java.lang.Exception
+2016-10-05 16:36:17.884  INFO 14200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-10-05 16:36:17.884  INFO 14200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-10-05 16:36:17.956  INFO 14200 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-05 16:36:17.962  INFO 14200 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-05 16:36:18.306  INFO 14200 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-10-05 16:36:18.915  INFO 14200 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-10-05 16:36:19.158  INFO 14200 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-10-05 16:36:19.171  INFO 14200 --- [main] s.m.c.config.MyCourseAppApplication      : Started MyCourseAppApplication in 13.722 seconds (JVM running for 16.331)
+2016-10-05 16:46:39.164  INFO 14200 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-10-05 16:46:39.165  INFO 14200 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-10-05 16:46:39.193  INFO 14200 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2016-10-05 16:46:39.336  INFO 14200 --- [http-nio-8080-exec-1] s.m.c.Controllers.UserController         : Received request to get all the courses for the user with userId 1
+2016-10-05 16:47:24.018 ERROR 14200 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at src.main.courseapp.services.CourseService.addTopicToCourse(CourseService.java:45)
+	at src.main.courseapp.Controllers.CourseController.addTopicToCourse(CourseController.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:114)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:651)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
