@@ -153,9 +153,5 @@ public class User extends BaseEntity{
 				+ ", middleName=" + middleName + ", password=" + password + ", DOB=" + DOB + ", phonenumber="
 				+ phonenumber + "]";
 	
-	}
-
-
-    
- 
-	}	
+	}}
+	
