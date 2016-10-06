@@ -344,3 +344,7 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2016-10-05 21:35:04.907  INFO 14832 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
 2016-10-05 21:35:05.180  INFO 14832 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
 2016-10-05 21:35:05.198  INFO 14832 --- [main] s.m.c.config.MyCourseAppApplication      : Started MyCourseAppApplication in 15.214 seconds (JVM running for 16.357)
+2016-10-05 21:43:34.921  INFO 14832 --- [RMI TCP Connection(2)-192.168.0.6] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2016-10-05 21:43:34.922  INFO 14832 --- [RMI TCP Connection(2)-192.168.0.6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6200f9cb: startup date [Wed Oct 05 21:34:51 CDT 2016]; root of context hierarchy
+2016-10-05 21:43:34.926  INFO 14832 --- [RMI TCP Connection(2)-192.168.0.6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2016-10-05 21:43:34.933  INFO 14832 --- [RMI TCP Connection(2)-192.168.0.6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
